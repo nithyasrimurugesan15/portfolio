@@ -24,16 +24,15 @@ const slideUp = {
 };
 
 const words = [
-  "Hello",
+  "வணக்கம்",      
+  "Hola",
   "Bonjour",
+  "こんにちは",
   "Ciao",
-  "Olà",
-  "やあ",
-  "Hallå",
-  "Guten tag",
-  "Hallo",
+  "안녕하세요",
+  "Hello World",
+  "Welcome ✨"
 ];
-
 export default function Preloader() {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });

@@ -28,9 +28,9 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Projects built", value: "3+" },
+  { label: "DSA problems solved", value: "300+" },
+  { label: "Technologies worked on", value: "6+" },
 ];
 
 const projects = [
@@ -68,34 +68,46 @@ const projects = [
 
 const services = [
   {
-    service: "Frontend Development",
+    service: "Backend Development",
     description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
+      "Building scalable backend systems using Java and Spring Boot, focusing on clean architecture and efficient server-side logic.",
     icon: Code2,
   },
   {
-    service: "UX Design",
+    service: "REST API Development",
     description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
+      "Designing and developing secure RESTful APIs with proper request handling, validation, and integration using Spring Boot.",
     icon: Frame,
   },
   {
-    service: "SEO Optimization",
+    service: "Database & JPA",
     description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
+      "Working with relational databases using JPA/Hibernate, writing optimized queries, and managing data efficiently.",
     icon: SearchCheck,
   },
   {
-    service: "Responsive Design",
+    service: "Frontend Development",
     description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
+      "Creating responsive user interfaces using HTML, CSS, and JavaScript with clean design and smooth user experience.",
     icon: MonitorSmartphone,
   },
   {
-    service: "Backend Development",
+    service: "API Testing & Tools",
     description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
+      "Testing and debugging APIs using Postman to ensure reliability, performance, and correct data flow.",
     icon: Eye,
+  },
+  {
+    service: "Security Implementation",
+    description:
+      "Implementing authentication and authorization using Spring Security to build secure web applications.",
+    icon: Code2,
+  },
+  {
+    service: "Core CS Fundamentals",
+    description:
+      "Strong understanding of Operating Systems, Computer Networks, and DBMS concepts for building efficient applications.",
+    icon: Frame,
   },
 ];
 
@@ -190,9 +202,12 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+            <span className={styles.pill}>Java</span>
+<span className={styles.pill}>Spring Boot</span>
+<span className={styles.pill}>JPA</span>
+<span className={styles.pill}>MySQL</span>
+<span className={styles.pill}>AWS</span>
+<span className={styles.pill}>DSA</span>
             </div>
             <div>
               <h1
@@ -206,7 +221,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Nithyasri Murugesan.
                 </span>
               </h1>
               <p
@@ -215,8 +230,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+              Java Backend Developer | Spring Boot | AWS | DSA | Building Secure & Scalable Systems
               </p>
             </div>
             <span
@@ -225,7 +239,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:amnithyasrimurugesan@gmail.com" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -268,21 +282,17 @@ export default function Home() {
             data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
-            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
-              <Link
-                href="https://create.t3.gg/"
-                target="_blank"
-                className="underline"
-              >
-                TypeScript, Tailwind, and Next.js
-              </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
-            </h2>
+          <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
+  I&apos;m a pre-final year student and passionate Java Backend Developer proficient in{" "}
+  <Link
+    href="#"
+    target="_blank"
+    className="underline"
+  >
+    Java, Spring Boot, JPA, and AWS
+  </Link>{" "}
+  with a strong focus on building scalable and secure backend systems. I have hands-on experience in developing RESTful APIs, working with databases, and optimizing application performance. I enjoy solving complex problems using Data Structures and Algorithms while writing clean, maintainable code and collaborating effectively in team environments.
+</h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
                 <div
@@ -399,19 +409,21 @@ export default function Home() {
               viewport={{ once: true }}
               className="grid items-center gap-1.5 md:grid-cols-2 xl:grid-cols-3"
             >
-              <div className="flex flex-col py-6 xl:p-6">
-                <h2 className="text-4xl font-medium tracking-tight">
-                  Need more info?
-                  <br />
-                  <span className="text-gradient clash-grotesk tracking-normal">
-                    I got you.
-                  </span>
-                </h2>
-                <p className="mt-2 tracking-tighter text-secondary-foreground">
-                  Here are some of the services I offer. If you have any
-                  questions, feel free to reach out.
-                </p>
-              </div>
+              <div className="flex flex-col py-8 xl:p-8 max-w-xl">
+  <h2 className="text-4xl font-semibold tracking-tight leading-tight">
+    Want to know more?
+    <br />
+    <span className="text-gradient clash-grotesk">
+      I’m here to help.
+    </span>
+  </h2>
+
+  <p className="mt-3 text-sm md:text-base text-secondary-foreground leading-relaxed">
+    I’m a pre-final year student exploring and building real-world projects.
+    Here are some of the services I offer. If you have any questions or would
+    like to collaborate, feel free to reach out.
+  </p>
+</div>
               {services.map((service) => (
                 <div
                   key={service.service}
@@ -443,10 +455,9 @@ export default function Home() {
               <span className="text-gradient clash-grotesk">together.</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m currently available for freelance work and open to
-              discussing new projects.
+             I&apos;m currently seeking internship and full-time opportunities and open to contributing to impactful backend projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="mailto:amnithyasrimurugesan@gmail.com" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>
