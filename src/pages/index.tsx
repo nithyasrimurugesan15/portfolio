@@ -196,19 +196,23 @@ export default function Home() {
           className="mt-40 flex w-full flex-col items-center xl:mt-0 xl:min-h-screen xl:flex-row xl:justify-between"
         >
           <div className={styles.intro}>
-            <div
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-speed=".09"
-              className="flex flex-row items-center space-x-1.5"
-            >
-            <span className={styles.pill}>Java</span>
-<span className={styles.pill}>Spring Boot</span>
-<span className={styles.pill}>JPA</span>
-<span className={styles.pill}>MySQL</span>
-<span className={styles.pill}>AWS</span>
-<span className={styles.pill}>DSA</span>
-            </div>
+         <div
+  data-scroll
+  data-scroll-direction="horizontal"
+  data-scroll-speed=".09"
+  className="flex flex-row items-center space-x-1.5"
+>
+  <span className={styles.pill}>Java</span>
+  <span className={styles.pill}>Spring Boot</span>
+  <span className={styles.pill}>REST APIs</span>
+  <span className={styles.pill}>JPA</span>
+  <span className={styles.pill}>MySQL</span>
+  <span className={styles.pill}>JUnit</span>
+  <span className={styles.pill}>Mockito</span>
+  <span className={styles.pill}>Maven</span>
+  <span className={styles.pill}>Git</span>
+  <span className={styles.pill}>DSA</span>
+</div>
             <div>
               <h1
                 data-scroll
@@ -230,9 +234,9 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-              Java Backend Developer | Spring Boot | AWS | DSA | Building Secure & Scalable Systems
-              </p>
+Java Backend Developer | Spring Boot | REST APIs | JUnit | Mockito | Maven | MySQL | System Design | DSA              </p>
             </div>
+
             <span
               data-scroll
               data-scroll-enable-touch-speed
@@ -283,13 +287,13 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
           <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-  I&apos;m a pre-final year student and passionate Java Backend Developer proficient in{" "}
+  I&apos;m a final year student and passionate Java Backend Developer proficient in{" "}
   <Link
     href="#"
     target="_blank"
     className="underline"
   >
-    Java, Spring Boot, JPA, and AWS
+    Java, Spring Boot, JPA, and Junit
   </Link>{" "}
   with a strong focus on building scalable and secure backend systems. I have hands-on experience in developing RESTful APIs, working with databases, and optimizing application performance. I enjoy solving complex problems using Data Structures and Algorithms while writing clean, maintainable code and collaborating effectively in team environments.
 </h2>
